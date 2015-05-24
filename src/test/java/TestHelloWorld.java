@@ -1,28 +1,11 @@
-import org.apache.cloudstack.utils.qemu.QemuImg;
 import org.apache.cloudstack.utils.qemu.QemuImgException;
-import org.apache.cloudstack.utils.qemu.QemuImgFile;
 import org.junit.Assert;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import pl.edu.agh.testsnapshot.HelloWorld;
 
-import java.io.File;
-import java.util.Map;
-import java.util.UUID;
-
-import static org.junit.Assert.assertEquals;
-
-/**
- * Created with IntelliJ IDEA.
- * User: Piotrek
- * Date: 14.09.13
- * Time: 02:16
- * To change this template use File | Settings | File Templates.
- */
 public class TestHelloWorld {
 
-    @Autowired
-    HelloWorld helloWorld;
+    HelloWorld helloWorld = new HelloWorld();
 
     @Test
     public void testHelloWorld() {
@@ -35,7 +18,7 @@ public class TestHelloWorld {
 
     @Test
     public void doSth() throws QemuImgException {
-        helloWorld.doSth("abc", "def");
+        helloWorld.doSth("Damn_Small_Linux-disk1.vmdk", "dsl.img");
     }
 
 }

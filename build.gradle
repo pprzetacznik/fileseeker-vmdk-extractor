@@ -30,6 +30,7 @@ dependencies {
     }
     compile files('libs/cloud-plugin-hypervisor-kvm-4.6.0-SNAPSHOT.jar')
     compile files('libs/cloud-utils-4.6.0-SNAPSHOT.jar')
+    compile 'org.apache.commons:commons-io:1.3.2'
 //    compile group: 'org.apache.cloudstack', name: 'cloud-plugin-hypervisor-kvm', version: '4.1.0-SNAPSHOT'
 //    compile group: 'org.apache.cloudstack', name: 'cloud-utils', version: '4.1.0-SNAPSHOT'
 //    compile group: 'org.apache.cloudstack', name: 'cloudstack-pluins', version: '4.6.0-SNAPSHOT'

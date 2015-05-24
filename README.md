@@ -1,3 +1,3 @@
 # Run
 
-    run simple
+    gradle run
